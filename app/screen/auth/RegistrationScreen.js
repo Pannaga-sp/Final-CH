@@ -11,7 +11,7 @@ import { storeToken } from "../../../services/AsyncStorageService"
 import MaterialCommunityIcons from '@expo/vector-icons';
 
 import Background from "../../../features/Background"
-import Logo from "../../../features/logo"
+// import Logo from "../../../features/logo"
 import BackButton from "../../../features/BackButton"
 import { Card } from "react-native-paper"
 import { TouchableOpacity } from "react-native-gesture-handler"
@@ -75,7 +75,7 @@ const RegistrationScreen = () => {
   return (
     <Background>
       <BackButton goBack={navigation.goBack} />
-      <Logo />
+      {/* <Logo /> */}
       <SafeAreaView>
        <ScrollView keyboardShouldPersistTaps="handled">
           <Card>
