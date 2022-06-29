@@ -9,7 +9,7 @@ import { useLoginUserMutation } from "../../../services/userAuthApi"
 import { storeToken } from "../../../services/AsyncStorageService"
 
 import Background from "../../../features/Background"
-import Logo from "../../../features/logo"
+// import Logo from "../../../features/logo"
 import BackButton from "../../../features/BackButton"
 import { Card } from "react-native-paper"
 
@@ -56,13 +56,13 @@ const UserLoginScreen = () => {
   return (
     <Background>
       <BackButton goBack={navigation.goBack} />
-      <Logo />
+     
 
       <SafeAreaView>
-        <Card>
-          <Card.Content>
+        
+            {/* <Logo /> */}
+            {/* <ScrollView keyboardShouldPersistTaps="handled"> */}
             <Toast config={toastConfig} />
-            <ScrollView keyboardShouldPersistTaps="handled">
               <View style={{ marginHorizontal: 30 }}>
                 <View style={[styles.inputWithLabel, { marginBottom: 10 }]}>
                   <Text style={styles.labelText}>Email</Text>
@@ -102,9 +102,9 @@ const UserLoginScreen = () => {
                   </View>
                 </View>
               </View>
-            </ScrollView>
+            {/* </ScrollView>
           </Card.Content>
-        </Card>
+        </Card> */}
       </SafeAreaView>
     </Background>
   )
